@@ -15,7 +15,7 @@
   <!-- meta character set -->
   <meta charset="UTF-8">
   <!-- Site Title -->
-  <title>Balance Log | CSEJnU</title>
+  <title>Library | CSEJnU</title>
 
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
   <!--
@@ -34,7 +34,7 @@
 
 <body>
 
-   <header id="header" class="header-scrolled" style="background-color:#04091e;">
+    <header id="header" class="header-scrolled" style="background-color:#04091e;">
 		<div class="container main-menu">
 			<div class="row align-items-center justify-content-between d-flex">
 			  <div id="logo">
@@ -125,27 +125,48 @@
 
 
 
-  <section class="course-details-area pt-60">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 left-contents">
-          <h2>Balance Log</h2>
-        </div>
-        <div class="col-lg-4 right-contents">
-          <ul>
-            <li>
-              <a class="justify-content-between d-flex" href="#">
-                <p>Balance</p>
-                <span class="or">12345678 Taka</span>
-              </a>
-            </li>
 
-          </ul>
+
+  <section class="course-details-area pt-40">
+    <div class="container">
+      <h2 style="padding-bottom: 30px;">Library Section</h2>
+
+
+      <div class="row">
+
+
+
+        <div class="col-lg-9 left-contents">
+
+          <a href="borrowlist.html"> <button class="primary-btn text-uppercase">Borrow List</button> </a>
+        </div>
+        <div class="col-lg-3 right-contents">
+
+
+          <div class="single-footer-widget">
+            <div class="" id="mc_embed_signup">
+              <form target="_blank"
+                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                method="get">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="EMAIL" placeholder="Search Books"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Books '" required=""
+                    type="email">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="lnr fa fa-search"></span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- Start course-details Area -->
   <section class="course-details-area pt-120" style="padding-top:50px;padding-bottom: 50px; ">
@@ -155,45 +176,39 @@
         <div class="col-lg-12 left-contents">
 
           <table class="table table-light">
-            <thead>
-
-              <td><b>Date</b></td>
-              <td><b>Whom</b></td>
-              <td><b>Reason</b></td>
-              <td><b>Amount</b></td>
-              <td><b>Debit/Credit</b></td>
+            <thead >
+				
+              <td><b>ISBN No.</b></td>
+			  <td><b>Book Name</b></td>
+              <td><b>Writer</b></td>
+              <td><b>Book Self</b></td>
+              <td><b>Available</b></td>
               <td><b>Action</b></td>
 
             </thead>
             <tbody>
 
-              <tr>
-
+              <tr >
+				<td>
+                  <input type="text" class="form-control" name="name" placeholder="ISBN No."
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'ISBN No.'">
+                </td>
+				
                 <td>
-                  <input type="text" class="form-control" name="name" placeholder="Date" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Date'">
+                  <input type="text" class="form-control" name="name" placeholder="Book Name"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Book Name'">
                 </td>
                 <td>
-                  <input type="text" class="form-control" name="name" placeholder="Whom" onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Whom'">
+                  <input type="text" class="form-control" name="name" placeholder="Writer"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Writer'">
                 </td>
                 <td>
-                  <input type="text" class="form-control" name="name" placeholder="Reason"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Reason'">
+                  <input type="text" class="form-control" name="name" placeholder="Book Self"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Book Self'">
                 </td>
                 <td>
-                  <input type="text" class="form-control" name="name" placeholder="Amount"
-                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Amount'">
-                </td>
-                <td>
-                  <div class="form-select" id="service-select">
-                    <select style="display: none;">
-                      <option datd-display="">Choose one</option>
-                      <option value="1">Debit</option>
-                      <option value="2">Credit</option>
-                    </select>
-
-                  </div>
+                  <input type="text" class="form-control" name="name" placeholder="Available" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Available'">
                 </td>
                 <td>
                   <a href="#" class="genric-btn primary small">ADD</a>
@@ -201,62 +216,26 @@
               </tr>
 
 
-              <tr>
+              <tr >
 
-                <td>22 November, 2019</td>
-                <td>Shobuj</td>
-                <td>AC Repair Cost</td>
-                <td>5700 TK</td>
-                <td>Debit</td>
+                <td>978-0-12-381479-1</td>
+				<td>Data Mining</td>
+                <td>Han Kamber Pie</td>
+                <td>7</td>
+                <td>10</td>
                 <td>
                   <a href="#" class="genric-btn primary small">Edit</a>
                 </td>
               </tr>
 
 
-              <tr>
+              <tr >
 
-                <td>22 November, 2019</td>
-                <td>Shobuj</td>
-                <td>AC Repair Cost</td>
-                <td>5700 TK</td>
-                <td>Debit</td>
-                <td>
-                  <a href="#" class="genric-btn primary small">Edit</a>
-                </td>
-              </tr>
-              <tr>
-
-                <td>22 November, 2019</td>
-                <td>Shobuj</td>
-                <td>AC Repair Cost</td>
-                <td>5700 TK</td>
-                <td>Debit</td>
-                <td>
-                  <a href="#" class="genric-btn primary small">Edit</a>
-                </td>
-              </tr>
-
-              <tr>
-
-                <td>22 November, 2019</td>
-                <td>Shobuj</td>
-                <td>AC Repair Cost</td>
-                <td>5700 TK</td>
-                <td>Debit</td>
-                <td>
-                  <a href="#" class="genric-btn primary small">Edit</a>
-                </td>
-              </tr>
-
-
-              <tr>
-
-                <td>22 November, 2019</td>
-                <td>Shobuj</td>
-                <td>AC Repair Cost</td>
-                <td>5700 TK</td>
-                <td>Debit</td>
+                <td>978-0-12-381479-1</td>
+				<td>Cryptography and Network Security</td>
+                <td>Foruzan</td>
+                <td>7</td>
+                <td>10</td>
                 <td>
                   <a href="#" class="genric-btn primary small">Edit</a>
                 </td>
@@ -264,13 +243,73 @@
 
 
 
-              <tr>
+			  <tr>
 
-                <td>22 November, 2019</td>
-                <td>Shobuj</td>
-                <td>AC Repair Cost</td>
-                <td>5700 TK</td>
-                <td>Debit</td>
+                <td>978-0-12-381479-1</td>
+				<td>Cryptography and Network Security</td>
+                <td>Foruzan</td>
+                <td>7</td>
+                <td>10</td>
+                <td>
+                  <a href="#" class="genric-btn primary small">Edit</a>
+                </td>
+              </tr>
+			  
+			  <tr>
+
+                <td>978-0-12-381479-1</td>
+				<td>Cryptography and Network Security</td>
+                <td>Foruzan</td>
+                <td>7</td>
+                <td>10</td>
+                <td>
+                  <a href="#" class="genric-btn primary small">Edit</a>
+                </td>
+              </tr>
+
+				<tr >
+
+                <td>978-0-12-381479-1</td>
+				<td>Cryptography and Network Security</td>
+                <td>Foruzan</td>
+                <td>7</td>
+                <td>10</td>
+                <td>
+                  <a href="#" class="genric-btn primary small">Edit</a>
+                </td>
+              </tr>
+			  
+			  <tr >
+
+                <td>978-0-12-381479-1</td>
+				<td>Cryptography and Network Security</td>
+                <td>Foruzan</td>
+                <td>7</td>
+                <td>10</td>
+                <td>
+                  <a href="#" class="genric-btn primary small">Edit</a>
+                </td>
+              </tr>
+			  
+			  <tr >
+
+                <td>978-0-12-381479-1</td>
+				<td>Cryptography and Network Security</td>
+                <td>Foruzan</td>
+                <td>7</td>
+                <td>10</td>
+                <td>
+                  <a href="#" class="genric-btn primary small">Edit</a>
+                </td>
+              </tr>
+			  
+			  <tr >
+
+                <td>978-0-12-381479-1</td>
+				<td>Cryptography and Network Security</td>
+                <td>Foruzan</td>
+                <td>7</td>
+                <td>10</td>
                 <td>
                   <a href="#" class="genric-btn primary small">Edit</a>
                 </td>
@@ -278,44 +317,12 @@
 
 
 
-              <tr>
-
-                <td>22 November, 2019</td>
-                <td>Shobuj</td>
-                <td>AC Repair Cost</td>
-                <td>5700 TK</td>
-                <td>Debit</td>
-                <td>
-                  <a href="#" class="genric-btn primary small">Edit</a>
-                </td>
-              </tr>
 
 
 
-              <tr>
-
-                <td>22 November, 2019</td>
-                <td>Shobuj</td>
-                <td>AC Repair Cost</td>
-                <td>5700 TK</td>
-                <td>Debit</td>
-                <td>
-                  <a href="#" class="genric-btn primary small">Edit</a>
-                </td>
-              </tr>
 
 
-              <tr>
 
-                <td>22 November, 2019</td>
-                <td>Shobuj</td>
-                <td>AC Repair Cost</td>
-                <td>5700 TK</td>
-                <td>Debit</td>
-                <td>
-                  <a href="#" class="genric-btn primary small">Edit</a>
-                </td>
-              </tr>
 
 
 
@@ -353,7 +360,7 @@
   </section>
   <!-- End course-details Area -->
 
-  	<footer>
+ <footer>
 <hr>
 <div>
         <p class="footer-text" style="text-align:center;">
@@ -361,7 +368,7 @@
           <script>document.write(new Date().getFullYear());</script> All rights reserved | CSE JnU
         </p>
 </div>
-</footer>  
+</footer>
   <!-- End footer Area -->
 
   <script src="js/vendor/jquery-2.2.4.min.js"></script>
