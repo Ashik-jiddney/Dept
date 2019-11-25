@@ -8,3 +8,4 @@
 * dashboard.html & classroomlist.html added by mahi
 * search icon added in event.html,achievement.html,news-board.html,notice-board.html & event-details.html " venue problem " fixed
 * faculty-profile added
+* balancelog added
