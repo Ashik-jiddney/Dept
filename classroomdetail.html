@@ -32,6 +32,18 @@
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/main.css">
 
+<style>
+
+#portal-drivers {
+  overflow-x: scroll;
+  overflow-y: scroll;
+    max-width: 80%;
+	max-height: 400px;
+    display: block;
+    white-space: nowrap;
+	}
+</style>
+
 </head>
 
 <body style="background-color: #f8f9fa;">
@@ -144,43 +156,7 @@
 							<p style="padding-top: 5px;">CSE-4210</p>
 						</div>
 					</div>
-
-					<div class="comment-form">
-						<h4>Upload Lecture</h4>
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control" id="subject" placeholder="Lecture Title"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Lecture Title'">
-							</div>
-
-							<div class="form-group">
-								<input type="file" class="form-control" id="subject" placeholder="Lecture Title"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Lecture Title'">
-							</div>
-
-
-							<a href="#" class="primary-btn small text-uppercase">UPLOAD</a>
-						</form>
-					</div>
-
-					<div class="comment-form">
-						<h4>Upload result</h4>
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control" id="subject" placeholder="Result Title"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Result Title'">
-							</div>
-
-							<div class="form-group">
-								<input type="file" class="form-control" id="subject" placeholder="result Title"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'result Title'">
-							</div>
-
-
-							<a href="#" class="primary-btn small text-uppercase">UPLOAD</a>
-						</form>
-					</div>
-
+					
 					<h2 style="text-align: center;padding-top:40px ;">ClassRoom Details</h2>
 
 					<div class="left-contents" style="padding-bottom: 20px;">
@@ -189,7 +165,9 @@
 							<div class="jq-tab-menu">
 								<div class="jq-tab-title active" data-tab="1">Overview</div>
 								<div class="jq-tab-title" data-tab="2">Lectures</div>
-								<div class="jq-tab-title" data-tab="3">Results</div>
+								<div class="jq-tab-title" data-tab="3">Attendance Sheet</div>
+								<div class="jq-tab-title" data-tab="4">Attendance</div>
+								<div class="jq-tab-title" data-tab="5">Results</div>
 							</div>
 							<div class="jq-tab-content-wrapper">
 								<div class="jq-tab-content active" data-tab="1">
@@ -279,7 +257,212 @@
 
 
 								</div>
-								<div class="jq-tab-content" data-tab="3">
+								
+								
+								<div class="jq-tab-content" data-tab="3" >
+
+									<table  class="table table-light" style="width:800px; background-color: #f9f9ff;">
+										<tbody id="portal-drivers">
+										
+										
+										<tr>
+    <th style="color: black;">Student ID</th> 
+    
+	<th>
+	<span style="color: black;">01.01.2020</span><br>
+	
+	<input type="checkbox"  onclick="checkAll()" id="01.01.2020"  />
+	<span id="label">All</span>
+	</th>
+    
+	<th>
+	<span style="color: black;">02.01.2020</span><br>
+	
+	<input type="checkbox"  onclick="checkAll()" id="02.01.2020"  />
+	<span id="label">All</span>
+	</th>
+	
+	<th>
+	<span style="color: black;">02.01.2020</span><br>
+	
+	<input type="checkbox" onclick="checkAll()" id="parent"  />
+	<span id="label">All</span>
+	</th>
+	
+	<th>
+	<span style="color: black;">03.01.2020</span><br>
+	
+	<span id="label">All</span>
+	<input type="checkbox" onclick="checkAll()" id="parent"  />
+	</th>
+	
+	<th>
+	<span style="color: black;">04.01.2020</span><br>
+	
+	<input type="checkbox" onclick="checkAll()" id="parent"  />
+	<span id="label">All</span>
+	</th>
+	
+	<th>
+	<span style="color: black;">05.01.2020</span><br>
+	
+	<input type="checkbox" onclick="checkAll()" id="parent" 	/>
+	<span id="label">All</span>
+	</th>
+	
+	<th>
+	<span style="color: black;">06.01.2020</span><br>
+	
+	<input type="checkbox" onclick="checkAll()" id="parent" checked />
+	<span id="label">All</span>
+	</th>
+	<th>
+	<span style="color: black;">07.01.2020</span><br>
+	
+	<input type="checkbox" onclick="checkAll()" id="parent" checked />
+	<span id="label">All</span>
+	</th>
+	
+  </tr>
+  
+  <tr>
+    
+	<td> B-150305002 </td>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+    
+  </tr>
+  
+    <tr>
+    
+	<td> B-150305003 </td>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+    
+  </tr>
+    <tr>
+    
+	<td> B-150305004 </td>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+    
+  </tr>
+    <tr>
+    
+	<td> B-150305005 </td>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+    
+  </tr>
+    <tr>
+    
+	<td> B-150305006 </td>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+    
+  </tr>
+    <tr>
+    
+	<td> B-150305008 </td>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+    
+  </tr>
+  <tr>
+    
+	<td> B-150305008 </td>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+    
+  </tr>
+  <tr>
+    
+	<td> B-150305008 </td>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+    
+  </tr>
+  <tr>
+    
+	<td> B-150305008 </td>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
+    
+  </tr>
+
+										</tbody>
+									</table>
+
+									<nav class="blog-pagination justify-content-center d-flex">
+										<ul class="pagination" style="padding-bottom:auto;">
+											<li class="page-item">
+												<a href="#" class="page-link" aria-label="Previous">
+													<span aria-hidden="true">
+														<span class="lnr lnr-chevron-left"></span>
+													</span>
+												</a>
+											</li>
+											<li class="page-item active"><a href="#" class="page-link">01</a></li>
+											<li class="page-item"><a href="#" class="page-link">02</a></li>
+											<li class="page-item"><a href="#" class="page-link">03</a></li>
+											<li class="page-item"><a href="#" class="page-link">04</a></li>
+											<li class="page-item">
+												<a href="#" class="page-link" aria-label="Next">
+													<span aria-hidden="true">
+														<span class="lnr lnr-chevron-right"></span>
+													</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+
+
+								</div>
+								
+								
+								
+								<div class="jq-tab-content" data-tab="5">
+								
+								</div>
+								
+								
+								<div class="jq-tab-content" data-tab="5">
 										<table class="table table-light" style="background-color: #f9f9ff;">
 												<tbody>
 													<thead>
@@ -316,8 +499,41 @@
 
 
 
+					<div class="comment-form">
+						<h4>Upload Lecture</h4>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" id="subject" placeholder="Lecture Title"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Lecture Title'">
+							</div>
+
+							<div class="form-group">
+								<input type="file" class="form-control" id="subject" placeholder="Lecture Title"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Lecture Title'">
+							</div>
 
 
+							<a href="#" class="primary-btn small text-uppercase">UPLOAD</a>
+						</form>
+					</div>
+
+					<div class="comment-form">
+						<h4>Upload result</h4>
+						<form>
+							<div class="form-group">
+								<input type="text" class="form-control" id="subject" placeholder="Result Title"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Result Title'">
+							</div>
+
+							<div class="form-group">
+								<input type="file" class="form-control" id="subject" placeholder="result Title"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'result Title'">
+							</div>
+
+
+							<a href="#" class="primary-btn small text-uppercase">UPLOAD</a>
+						</form>
+					</div>
 
 
 
@@ -454,106 +670,6 @@
 
 							</div>
 						</div>
-						<!--
-						<div class="single-sidebar-widget post-category-widget">
-							<h4 class="category-title">Post Catgories</h4>
-							<ul class="cat-list">
-								<li>
-									<a href="#" class="d-flex justify-content-between">
-										<p>Technology</p>
-										<p>37</p>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="d-flex justify-content-between">
-										<p>Lifestyle</p>
-										<p>24</p>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="d-flex justify-content-between">
-										<p>Fashion</p>
-										<p>59</p>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="d-flex justify-content-between">
-										<p>Art</p>
-										<p>29</p>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="d-flex justify-content-between">
-										<p>Food</p>
-										<p>15</p>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="d-flex justify-content-between">
-										<p>Architecture</p>
-										<p>09</p>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="d-flex justify-content-between">
-										<p>Adventure</p>
-										<p>44</p>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="single-sidebar-widget newsletter-widget">
-							<h4 class="newsletter-title">Newsletter</h4>
-							<p>
-								Here, I focus on a range of items and features that we use in life without
-								giving them a second thought.
-							</p>
-							<div class="form-group d-flex flex-row">
-								<div class="col-autos">
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<div class="input-group-text"><i class="fa fa-envelope"
-													aria-hidden="true"></i>
-											</div>
-										</div>
-										<input type="text" class="form-control" id="inlineFormInputGroup"
-											placeholder="Enter email" onfocus="this.placeholder = ''"
-											onblur="this.placeholder = 'Enter email'">
-									</div>
-								</div>
-								<a href="#" class="bbtns">Subcribe</a>
-							</div>
-							<p class="text-bottom">
-								You can unsubscribe at any time
-							</p>
-						</div>
-
-					-->
-
-
-
-
-
-
-						<!--
-
-
-
-
-						<div class="single-sidebar-widget tag-cloud-widget">
-							<h4 class="tagcloud-title">Research Areas</h4>
-							<ul>
-								<li><a href="#">Machine Learning</a></li>
-								<li><a href="#">Big Data</a></li>
-								<li><a href="#">Image Processing</a></li>
-								<li><a href="#">Data Mining</a></li>
-								<li><a href="#">Blockchain</a></li>
-							</ul>
-						</div>
-
-					-->
-
-
 
 
 
@@ -582,6 +698,67 @@
 		</footer>
 	<!-- End footer Area -->
 
+
+	<script>
+
+$("#portal-drivers").dataTable( {
+    "sScrollX": "100%",
+    "sScrollXInner": "110%",
+	"sScrollY": "100%",
+    "sScrollYInner": "110%",
+} );
+
+
+
+        function checkAll(){
+            var parent = document.getElementById("01.01.2020");
+            var label = document.getElementById("label");
+            var input = document.getElementsByTagName("input");
+			
+			
+
+            if(parent.checked === true ) {
+                for(var i=0; i<input.length; i++){
+                    if (input[i].type == "checkbox" && input[i].id == "01.01.2020" && input[i].checked == false) {
+ 
+                        input[i].checked = true;
+                        label.innerHTML = "All";
+                    }
+                }
+            }
+            else if(parent.checked === false ) {
+                for(var i=0; i<input.length; i++){
+                    if (input[i].type == "checkbox" && input[i].id == "01.01.2020" && input[i].checked ==true) {
+
+                        input[i].checked = false;
+                        label.innerHTML="All";
+                    }
+                }
+            }
+        
+		
+		var parent1 = document.getElementById("02.01.2020");
+		if(parent1.checked === true) {
+                for(var i=0; i<input.length; i++){
+                    if (input[i].type == "checkbox" && input[i].id == "02.01.2020" && input[i].checked == false) {
+ 
+                        input[i].checked = true;
+                        label.innerHTML = "All";
+                    }
+                }
+            }
+		else if(parent1.checked === false) {
+                for(var i=0; i<input.length; i++){
+                    if (input[i].type == "checkbox" && input[i].id == "02.01.2020" && input[i].checked ==true) {
+
+                        input[i].checked = false;
+                        label.innerHTML="All";
+                    }
+                }
+            }
+			
+       }
+    </script>
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
