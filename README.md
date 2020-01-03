@@ -1,3 +1,3 @@
 * https://ashik-jiddney.github.io/Dept/
 
-* dashboard added
+* attendance updated & added ashik.js in js folder

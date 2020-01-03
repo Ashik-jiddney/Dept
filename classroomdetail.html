@@ -37,7 +37,7 @@
 #portal-drivers {
   overflow-x: scroll;
   overflow-y: scroll;
-    max-width: 80%;
+    max-width: 700px;
 	max-height: 400px;
     display: block;
     white-space: nowrap;
@@ -261,7 +261,7 @@
 								
 								<div class="jq-tab-content" data-tab="3" >
 
-									<table  class="table table-light" style="width:800px; background-color: #f9f9ff;">
+									<table id="dataTable" class="table table-light" style="width:800px; background-color: #f9f9ff;">
 										<tbody id="portal-drivers">
 										
 										
@@ -269,171 +269,27 @@
     <th style="color: black;">Student ID</th> 
     
 	<th>
-	<span style="color: black;">01.01.2020</span><br>
-	
+	<input type="text" placeholder="date"/> <br>
 	<input type="checkbox"  onclick="checkAll()" id="01.01.2020"  />
 	<span id="label">All</span>
 	</th>
+	<th style="color:black;">Student ID </th>
     
-	<th>
-	<span style="color: black;">02.01.2020</span><br>
-	
-	<input type="checkbox"  onclick="checkAll()" id="02.01.2020"  />
-	<span id="label">All</span>
-	</th>
-	
-	<th>
-	<span style="color: black;">02.01.2020</span><br>
-	
-	<input type="checkbox" onclick="checkAll()" id="parent"  />
-	<span id="label">All</span>
-	</th>
-	
-	<th>
-	<span style="color: black;">03.01.2020</span><br>
-	
-	<span id="label">All</span>
-	<input type="checkbox" onclick="checkAll()" id="parent"  />
-	</th>
-	
-	<th>
-	<span style="color: black;">04.01.2020</span><br>
-	
-	<input type="checkbox" onclick="checkAll()" id="parent"  />
-	<span id="label">All</span>
-	</th>
-	
-	<th>
-	<span style="color: black;">05.01.2020</span><br>
-	
-	<input type="checkbox" onclick="checkAll()" id="parent" 	/>
-	<span id="label">All</span>
-	</th>
-	
-	<th>
-	<span style="color: black;">06.01.2020</span><br>
-	
-	<input type="checkbox" onclick="checkAll()" id="parent" checked />
-	<span id="label">All</span>
-	</th>
-	<th>
-	<span style="color: black;">07.01.2020</span><br>
-	
-	<input type="checkbox" onclick="checkAll()" id="parent" checked />
-	<span id="label">All</span>
-	</th>
-	
+  </tr>
+  <tr>
+    
+	<td> <input type="text" placeholder="Student ID" /> </td>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+    <td><input type="text" placeholder="Student ID"/></td>
   </tr>
   
-  <tr>
-    
-	<td> B-150305002 </td>
-	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-    
-  </tr>
-  
-    <tr>
-    
-	<td> B-150305003 </td>
-	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-    
-  </tr>
-    <tr>
-    
-	<td> B-150305004 </td>
-	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-    
-  </tr>
-    <tr>
-    
-	<td> B-150305005 </td>
-	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-    
-  </tr>
-    <tr>
-    
-	<td> B-150305006 </td>
-	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-    
-  </tr>
-    <tr>
-    
-	<td> B-150305008 </td>
-	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-    
-  </tr>
-  <tr>
-    
-	<td> B-150305008 </td>
-	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-    
-  </tr>
-  <tr>
-    
-	<td> B-150305008 </td>
-	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-    
-  </tr>
-  <tr>
-    
-	<td> B-150305008 </td>
-	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="02.01.2020"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-	<td><input type="checkbox" name="" id="child_chkbx"  /></td>
-    
-  </tr>
-
 										</tbody>
 										<!--<button class="genric-btn primary small"   id="edit"   type="submit">Edit</button>-->
-										
+									<input  class="genric-btn medium primary radius" value="Save Changes" onclick=""/> &nbsp
+									<input  class="genric-btn medium primary radius" value="Add Row" onclick="addRow('dataTable')" /> &nbsp
+									<input  class="genric-btn medium primary radius" value="Add Col" onclick="myFunction()" />	
 
 									</table>
-									<p style="text-align: center;">
-									<a href="#" class="genric-btn primary radius">
-										Save Changes</a></p>
 
 									
 
@@ -683,67 +539,9 @@
 	<!-- End footer Area -->
 
 
-	<script>
-
-$("#portal-drivers").dataTable( {
-    "sScrollX": "100%",
-    "sScrollXInner": "110%",
-	"sScrollY": "100%",
-    "sScrollYInner": "110%",
-} );
-
-
-
-        function checkAll(){
-            var parent = document.getElementById("01.01.2020");
-            var label = document.getElementById("label");
-            var input = document.getElementsByTagName("input");
-			
-			
-
-            if(parent.checked === true ) {
-                for(var i=0; i<input.length; i++){
-                    if (input[i].type == "checkbox" && input[i].id == "01.01.2020" && input[i].checked == false) {
- 
-                        input[i].checked = true;
-                        label.innerHTML = "All";
-                    }
-                }
-            }
-            else if(parent.checked === false ) {
-                for(var i=0; i<input.length; i++){
-                    if (input[i].type == "checkbox" && input[i].id == "01.01.2020" && input[i].checked ==true) {
-
-                        input[i].checked = false;
-                        label.innerHTML="All";
-                    }
-                }
-            }
-        
-		
-		var parent1 = document.getElementById("02.01.2020");
-		if(parent1.checked === true) {
-                for(var i=0; i<input.length; i++){
-                    if (input[i].type == "checkbox" && input[i].id == "02.01.2020" && input[i].checked == false) {
- 
-                        input[i].checked = true;
-                        label.innerHTML = "All";
-                    }
-                }
-            }
-		else if(parent1.checked === false) {
-                for(var i=0; i<input.length; i++){
-                    if (input[i].type == "checkbox" && input[i].id == "02.01.2020" && input[i].checked ==true) {
-
-                        input[i].checked = false;
-                        label.innerHTML="All";
-                    }
-                }
-            }
-			
-       }
-    </script>
-
+	
+	
+	<script src="js/ashik.js"></script>
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
