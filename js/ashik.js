@@ -19,7 +19,7 @@ $("#portal-drivers").dataTable( {
                     if (input[i].type == "checkbox" && input[i].id == "01.01.2020" && input[i].checked == false) {
  
                         input[i].checked = true;
-                        label.innerHTML = "All";
+                        label.innerHTML = "Select All";
                     }
                 }
             }
@@ -28,7 +28,7 @@ $("#portal-drivers").dataTable( {
                     if (input[i].type == "checkbox" && input[i].id == "01.01.2020" && input[i].checked ==true) {
 
                         input[i].checked = false;
-                        label.innerHTML="All";
+                        label.innerHTML="Select All";
                     }
                 }
             }
@@ -40,7 +40,7 @@ $("#portal-drivers").dataTable( {
                     if (input[i].type == "checkbox" && input[i].id == "02.01.2020" && input[i].checked == false) {
  
                         input[i].checked = true;
-                        label.innerHTML = "All";
+                        label.innerHTML = "Select All";
                     }
                 }
             }
@@ -49,7 +49,7 @@ $("#portal-drivers").dataTable( {
                     if (input[i].type == "checkbox" && input[i].id == "02.01.2020" && input[i].checked ==true) {
 
                         input[i].checked = false;
-                        label.innerHTML="All";
+                        label.innerHTML="Select All";
                     }
                 }
             }
@@ -98,7 +98,7 @@ var firstRow = document.getElementById("dataTable").rows[i];
   var element2 = document.createElement("input");
 			element2.type = "textbox";
 			element2.name = "textbox[]";
-			element2.placeholder = "Date";
+			element2.placeholder = "01/01/2020";
 			x.appendChild(element2);
 			var br = document.createElement("br");
 			x.appendChild(br);
@@ -108,7 +108,7 @@ var firstRow = document.getElementById("dataTable").rows[i];
 	el.id = "label";
 	x.appendChild(el);
 	
-	var textNode = document.createTextNode(" All");
+	var textNode = document.createTextNode(" Select All");
 	x.appendChild(textNode);
 			
 			

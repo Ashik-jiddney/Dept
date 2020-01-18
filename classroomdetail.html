@@ -38,7 +38,7 @@
   overflow-x: scroll;
   overflow-y: scroll;
     max-width: 700px;
-	max-height: 400px;
+	max-height: 450px;
     display: block;
     white-space: nowrap;
 	}
@@ -269,25 +269,74 @@
     <th style="color: black;">Student ID</th> 
     
 	<th>
-	<input type="text" placeholder="date"/> <br>
+	<input  type="text" placeholder="01/01/2020"/> <br>
 	<input type="checkbox"  onclick="checkAll()" id="01.01.2020"  />
-	<span id="label">All</span>
+	<span id="label">Select All</span>
 	</th>
 	<th style="color:black;">Student ID </th>
     
   </tr>
+<!--  <tr>
+    
+	<td> <input  type="" placeholder="Student ID" /> </td>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+    <td><input  type="text" placeholder="Student ID"/></td>
+  </tr>		-->
   <tr>
     
-	<td> <input type="text" placeholder="Student ID" /> </td>
+	<th> B150305002 </th>
 	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
-    <td><input type="text" placeholder="Student ID"/></td>
+    <th> B150305002 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305003 </th>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+    <th> B150305003 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305004 </th>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+    <th> B150305004 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305005 </th>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+    <th> B150305005 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305006 </th>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+    <th> B150305006 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305007 </th>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+    <th> B150305007 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305008 </th>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+    <th> B150305008 </th>
+  </tr>
+      <tr>
+    
+	<th> B150305010 </th>
+	<td><input type="checkbox" name="" id="01.01.2020"  /></td>
+    <th> B150305010 </th>
   </tr>
   
 										</tbody>
 										<!--<button class="genric-btn primary small"   id="edit"   type="submit">Edit</button>-->
-									<input  class="genric-btn medium primary radius" value="Save Changes" onclick=""/> &nbsp
-									<input  class="genric-btn medium primary radius" value="Add Row" onclick="addRow('dataTable')" /> &nbsp
-									<input  class="genric-btn medium primary radius" value="Add Col" onclick="myFunction()" />	
+									<button  class="genric-btn medium primary radius" value="Save Changes" onclick="">Save Changes</button> &nbsp
+								<!--	<input  class="genric-btn medium primary radius" value="Add Row" onclick="addRow('dataTable')" /> &nbsp -->
+								<!--	<input  class="genric-btn medium primary radius" value="Add Col" onclick="myFunction()" />	-->
+									<button  class="genric-btn medium primary radius" value="Add Col" onclick="myFunction()" >Add Attendance </button>	
 
 									</table>
 
@@ -297,8 +346,80 @@
 								
 								
 								
-								<div class="jq-tab-content" data-tab="5">
-								
+								<div class="jq-tab-content" data-tab="4">
+									<table id="dataTable" class="table table-light" style="width:800px; background-color: #f9f9ff;">
+										<tbody id="portal-drivers">
+										
+  
+  <tr>
+    <th style="color: black;">Student ID</th> 
+    <th style="color:black;">01/01/2020</th>
+	<th style="color:black;">02/01/2020</th>
+	<th style="color:black;">Student ID</th>
+    
+  </tr>
+  <tr>
+    
+	<th> B150305002 </th>
+	<th><p style="text-align:center;color:green;">&#10004;</p></th>
+	<th><p style="text-align:center;color:green;">&#10004;</p></th>
+    <th> B150305002 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305003 </th>
+	<th><p style="text-align:center;color:green;">&#10004;</p></th>
+	<th><p style="text-align:center;color:green;">&#10004;</p></th>
+    <th> B150305003 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305004 </th>
+	<th><p style="text-align:center;color:green;">&#10004;</p></th>
+	<th><p style="text-align:center;color:red;">&#10060;</p></th>
+    <th> B150305004 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305005 </th>
+	<th><p style="text-align:center;color:red;">&#10060;</p></th>
+	<th><p style="text-align:center;color:green;">&#10004;</p></th>
+    <th> B150305005 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305006 </th>
+	<th><p style="text-align:center;color:green;">&#10004;</p></th>
+	<th><p style="text-align:center;color:red;">&#10060;</p></th>
+    <th> B150305006 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305007 </th>
+	<th><p style="text-align:center;color:red;">&#10060;</p></th>
+	<th><p style="text-align:center;color:green;">&#10004;</p></th>
+    <th> B150305007 </th>
+  </tr>
+    <tr>
+    
+	<th> B150305008 </th>
+	<th><p style="text-align:center;color:red;">&#10060;</p></th>
+	<th><p style="text-align:center;color:green;">&#10004;</p></th>
+    <th> B150305008 </th>
+  </tr>
+      <tr>
+    
+	<th> B150305010 </th>
+	<th><p style="text-align:center;color:green;">&#10004;</p></th>
+	<th><p style="text-align:center;color:red;">&#10060;</p></th>
+    <th> B150305010 </th>
+  </tr>
+  
+										</tbody>
+									
+									</table>
+
+									
 								</div>
 								
 								
